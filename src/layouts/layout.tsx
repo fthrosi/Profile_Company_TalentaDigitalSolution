@@ -7,18 +7,21 @@ export default function Layout() {
   const [showSplash, setShowSplash] = useState(true);
   return (
     <>
-      {showSplash && <SplashScreen onFinish={() => setShowSplash(false)} />}
-      <div>
-        <header>
-          <Navbar />
-        </header>
-        <main className="h-[100vh] bg-amber-400 pt-26">
-          <Outlet />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </div>
+      {showSplash ? (
+        <SplashScreen onFinish={() => setShowSplash(false)} />
+      ) : (
+        <div>
+          <header>
+            <Navbar />
+          </header>
+          <main className="min-h-[100vh] 2xl:pt-26.5 lg:pt-18">
+            <Outlet />
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
+      )}
     </>
   );
 }
