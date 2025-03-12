@@ -14,7 +14,7 @@ export default function Layout() {
           <header>
             <Navbar />
           </header>
-          <main className="min-h-[100vh] 2xl:pt-26.5 lg:pt-18">
+          <main className="min-h-[100vh] 2xl:pt-23.5 lg:pt-18">
             <Outlet />
           </main>
           <footer>

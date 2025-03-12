@@ -4,7 +4,7 @@ import Value from "../components/productPage/value";
 import Jasa from "../components/productPage/jasa";
 export default function ProductPage() {
   return (
-    <div className="2xl:px-25 lg:px-22 2xl:pt-15 lg:pt-10 2xl:pb-20 lg:pb-20 bg-[url(/assets/icons/background-1.png)] bg-top bg-no-repeat 2xl:bg-[length:100%_35rem] lg:bg-[length:100%_65%%]">
+    <div className="2xl:px-25 lg:px-22 2xl:pt-15 lg:pt-10 2xl:pb-20 lg:pb-20 bg-[url(/assets/icons/background-1.png)] bg-top bg-no-repeat 2xl:bg-[length:100%_35rem] lg:bg-[length:100%_30rem]">
       <div className="flex gap-9 items-center text-white">
         <div className="text-pretty w-1/2">
           <h1 className="2xl:text-6xl/18 font-bold text-wrap font-cabin lg:text-4xl/12">
