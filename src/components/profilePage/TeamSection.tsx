@@ -1,4 +1,4 @@
-import TeamSwiper from "./TeamSwiper";
+import TeamSwiper from "./swiper";
 
 export default function TeamSection() {
   return (
