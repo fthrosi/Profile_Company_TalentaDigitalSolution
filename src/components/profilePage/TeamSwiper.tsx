@@ -42,7 +42,7 @@ const TeamSwiper: React.FC = () => {
     const paddingCount = currentItemsPerPage - pageItems.length;
     if (paddingCount > 0 && currentPage === totalPages - 1) {
       for (let i = 0; i < paddingCount; i++) {
-        pageItems.push({ id: -i - 1, title: "", jabatan: "", content: "", sosmed: [] });
+        pageItems.push( { id: -i - 1, title: "",foto:"", jabatan: "", content: "", sosmed: [],linksosmed: [] });
       }
     }
     return pageItems;

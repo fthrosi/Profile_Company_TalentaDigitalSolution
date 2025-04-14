@@ -1,7 +1,7 @@
 import Header from "../components/productPage/Header";
-import Penawaran from "../components/productPage/Penawaran";
-import Value from "../components/productPage/Value";
-import Jasa from "../components/productPage/Jasa";
+import Penawaran from "../components/productPage/penawaran";
+import Value from "../components/productPage/value";
+import Jasa from "../components/productPage/jasa";
 import SlideInUp from "../animations/SlideInUp";
 
 export default function ProductPage() {

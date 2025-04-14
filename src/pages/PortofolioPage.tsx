@@ -1,4 +1,4 @@
-import Header from "../components/portofolio/Header"
+import Header from "../components/portofolio/header"
 import Portofoilo from "../components/portofolio/PortofolioSection"
 import Teknologi from "../components/portofolio/Technology"
 import SlideInUp from "../animations/SlideInUp"

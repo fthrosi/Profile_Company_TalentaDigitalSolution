@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "../components/navigation/Navbar";
-import Footer from "../components/navigation/Footer";
-import SplashScreen from "../components/splashscreen/SplashScreen";
+import Footer from "../components/navigation/footer";
+import SplashScreen from "../components/splashscreen/splashScreen";
 
 export default function Layout() {
   const [showSplash, setShowSplash] = useState(true);

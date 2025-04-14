@@ -1,4 +1,4 @@
-import CardJasa from "./CardJasa";
+import CardJasa from "./cardJasa";
 import data from "../../data/jasa.json"
 
 const Jasa = () => {
