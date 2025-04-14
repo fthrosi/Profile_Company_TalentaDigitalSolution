@@ -1,0 +1,137 @@
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
+export default function Navbar() {
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [scrollTimeout, setScrollTimeout] = useState<number | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
+  
+
+  const handleScroll = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY && window.scrollY > 10)
+        setVisible(false);
+      else
+        setVisible(true);
+
+      setLastScrollY(window.scrollY);
+
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+
+      const newTimeout = setTimeout(() => {
+        setVisible(true);
+      }, 300);
+      setScrollTimeout(newTimeout);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+    };
+  }, [lastScrollY, scrollTimeout]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <div
+      className={`fixed z-10 top-0 right-0 w-full bg-white shadow-md transition-transform duration-300 ease-in-out ${
+        visible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
+      <div className="flex justify-between items-center px-4 md:px-12 py-4">
+        <Link to="/">
+          <img
+            src="/assets/icons/logo-app.png"
+            alt="logo"
+            className="w-36"
+          />
+        </Link>
+
+        <button
+          className="md:hidden text-blue-800 focus:outline-none"
+          onClick={toggleMenu}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <div className="hidden md:flex md:items-center md:space-x-8 lg:space-x-12 xl:space-x-20 2xl:space-x-32 text-blue-800 font-normal text-base sm:text-lg lg:text-xl 2xl:text-2xl font-cabin">
+          <Link to="/" className="hover:text-blue-500">
+            Produk
+          </Link>
+          <Link to="/profile" className="hover:text-blue-500">
+            Profil
+          </Link>
+          <Link to="/portofolio" className="hover:text-blue-500">
+            Portofolio
+          </Link>
+        </div>
+
+        <div className="hidden md:flex md:items-center md:space-x-8 lg:space-x-12 xl:space-x-20 2xl:space-x-32 text-blue-800 font-normal text-base text-xk font-cabin">
+          <Link
+            to="/kontak"
+            className="bg-blue-800 text-white px-6 py-3 rounded-4xl hover:bg-blue-900 transition-colors duration-300 ease-in-out"
+          >
+            Kontak Kami
+          </Link>
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div
+          className={`md-2:hidden shadow-xl fixed z-50 inset-y-0 left-0 w-64 bg-white text-black transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out min-h-screen`}
+        >
+          <div className="p-4 flex justify-between items-center">
+            <div className="flex">
+              <img src={"/assets/icons/logo-app.png"} className="h-10" alt="Flowbite Logo" />
+            </div>
+            <button className="text-white focus:outline-none" onClick={toggleMenu}>
+              <svg className="w-6 h-6" fill="none" stroke="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div className="flex flex-col space-y-4 p-4 font-cabin text-blue-800 font-normal">
+            <Link to="/" className="hover:text-blue-500" onClick={closeMenu}>
+              Produk
+            </Link>
+            <Link to="/profile" className="hover:text-blue-500" onClick={closeMenu}>
+              Profil
+            </Link>
+            <Link to="/portofolio" className="hover:text-blue-500"  onClick={closeMenu}>
+              Portofolio
+            </Link>
+            <Link
+            to="/kontak"
+            className="bg-blue-800 text-white text-center px-4 py-2 sm:px-6 sm:py-2.5 lg:px-8 lg:py-3 2xl:px-10 2xl:py-3.5 rounded-4xl font-medium hover:bg-blue-900 transition-colors duration-300 ease-in-out"
+             onClick={closeMenu}>
+            Kontak Kami
+          </Link>
+          </div>
+      </div>
+    </div>
+  );
+}
