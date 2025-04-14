@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProfilPage from "./pages/ProfilPage";
 import ProductPage from "./pages/ProductPage";
-import MainLayout from "./layouts/MainLayout";
+import Layout from "./layouts/layout";
 import ContactLayout from "./layouts/ContactLayout";
 import Portofolio from "./pages/PortofolioPage";
 import ContactUs from "./pages/ContactUs";
@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<MainLayout />}>
+        <Route element={<Layout />}>
           <Route path="/profile" element={<ProfilPage />} />
           <Route path="/" element={<ProductPage />} />
           <Route path="/portofolio" element={<Portofolio />} />
