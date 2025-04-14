@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import Card from "./card";
 
 export default function Header() {
   const parallaxRef1 = useRef<HTMLDivElement>(null);
