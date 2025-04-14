@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProfilPage from "./pages/ProfilPage";
 import ProductPage from "./pages/ProductPage";
-import Layout from "./layouts/layout";
+import Layout from "./layouts/MainLayout";
 import ContactLayout from "./layouts/ContactLayout";
 import Portofolio from "./pages/PortofolioPage";
 import ContactUs from "./pages/ContactUs";
