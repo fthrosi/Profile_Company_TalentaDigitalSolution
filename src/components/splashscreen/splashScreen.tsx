@@ -32,7 +32,7 @@ const SplashScreen: React.FC<{ onFinish: () => void }> = ({ onFinish }) => {
        <img
           src="/assets/icons/logo-app.png"
           alt="splash"
-          className="w-[200px] lg:w-[300px] 2xl:w-[400px] h-fit"
+          className="w-[200px] lg:w-[300px] 2xl:w-[400px]"
         />
     </div>
   );

@@ -10,7 +10,7 @@ const Card: React.FC<cardProps> = ({ judul, isi, img }) => {
         <h1 className="2xl:text-3xl lg:text-xl xl:text-2xl font-bold text-blue-800 font-cabin">{judul}</h1>
         <p className="lg:text-base xl:text-lg 2xl:text-xl mt-2 text-blue-950 font-cabin">{isi}</p>
       </div>
-      <div className="h-fit w-full mt-3">
+      <div className="w-full mt-3">
         <img src={img} alt="card" className="h-full object-fill" />
       </div>
     </div>
