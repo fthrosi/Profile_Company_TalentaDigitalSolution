@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "../components/navigation2/Navbar"
-import Footer from "../components/navigation2/Footer"
+import Footer from "../components/navigation2/Foote"
 
 export default function ContactLayout(){
     return(

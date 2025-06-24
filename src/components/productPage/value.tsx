@@ -3,11 +3,11 @@ import data from "../../data/value.json"
 const Value = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-6 text-center px-4 mt-8 md:mt-0 sm:px-6 md:px-8 lg:px-12">
-        <h1 className="text-blue-800 text-3xl sm:text-4xl md:text-5xl font-bold">
+      <div className="flex flex-col items-center justify-center gap-6 text-center px-12 mt-8 md:mt-0 sm:px-14 md:px-16 lg:px-18">
+        <h1 className="text-blue-800 text-2xl sm:text-3xl md:text-4xl font-bold">
           Value Yang Kami Berikan
         </h1>
-        <h1 className="text-black opacity-55 text-lg sm:text-xl md:text-2xl max-w-3xl">
+        <h1 className="text-black opacity-55 text-base sm:text-lg md:text-xl max-w-3xl">
           Layanan lengkap yang kami tawarkan dirancang khusus untuk memenuhi kebutuhan bisnis Anda.
         </h1>
       </div>

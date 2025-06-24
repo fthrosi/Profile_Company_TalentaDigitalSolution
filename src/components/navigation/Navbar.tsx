@@ -45,16 +45,16 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed z-10 top-0 right-0 w-full bg-white shadow-md transition-transform duration-300 ease-in-out ${
-        visible ? "translate-y-0" : "-translate-y-full"
+      className={`fixed z-10 top-0 2xl:h-[82px] right-0 w-full bg-transparent shadow-md transition-transform duration-300 ease-in-out ${
+        visible ? "translate-y-0 bg-white" : "-translate-y-full"
       }`}
     >
-      <div className="flex justify-between items-center px-4 md:px-12 py-4">
+      <div className="flex justify-between items-center px-4 md:px-12 xl:px-24 2xl:px-48 py-4">
         <Link to="/">
           <img
             src="/assets/icons/logo-app.png"
             alt="logo"
-            className="w-36"
+            className="w-28 md:w-35 xl:w-45"
           />
         </Link>
 
@@ -78,7 +78,7 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <div className="hidden md:flex md:items-center md:space-x-8 lg:space-x-12 xl:space-x-20 2xl:space-x-32 text-blue-800 font-normal text-base sm:text-lg lg:text-xl 2xl:text-2xl font-cabin">
+        <div className="hidden md:flex md:items-center md:space-x-8 lg:space-x-12 xl:space-x-20 text-blue-800 font-normal text-base lg:text-xl font-cabin">
           <Link to="/" className="hover:text-blue-500">
             Produk
           </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
         <div className="hidden md:flex md:items-center md:space-x-8 lg:space-x-12 xl:space-x-20 2xl:space-x-32 text-blue-800 font-normal text-base text-xk font-cabin">
           <Link
             to="/kontak"
-            className="bg-blue-800 text-white px-6 py-3 rounded-4xl hover:bg-blue-900 transition-colors duration-300 ease-in-out"
+            className="bg-blue-800 text-white px-4 py-2 md:px-3 md:py-2 md:text-sm rounded-4xl hover:bg-blue-900 transition-colors duration-300 ease-in-out"
           >
             Kontak Kami
           </Link>
@@ -102,11 +102,11 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <div
-          className={`md-2:hidden shadow-xl fixed z-50 inset-y-0 left-0 w-64 bg-white text-black transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out min-h-screen`}
+          className={`md:hidden shadow-xl fixed z-50 inset-y-0 left-0 w-full bg-white text-black transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out min-h-screen`}
         >
-          <div className="p-4 flex justify-between items-center">
+          <div className="fixed w-full p-4 flex justify-between items-center ">
             <div className="flex">
-              <img src={"/assets/icons/logo-app.png"} className="h-10" alt="Flowbite Logo" />
+              <img src={"/assets/icons/logo-app.png"} className="w-28" alt="Flowbite Logo" />
             </div>
             <button className="text-white focus:outline-none" onClick={toggleMenu}>
               <svg className="w-6 h-6" fill="none" stroke="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +114,7 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex flex-col space-y-4 p-4 font-cabin text-blue-800 font-normal">
+          <div className="flex flex-col items-center justify-center space-y-4 p-4 font-cabin text-blue-800 font-normal h-screen">
             <Link to="/" className="hover:text-blue-500" onClick={closeMenu}>
               Produk
             </Link>
