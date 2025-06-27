@@ -1,6 +1,6 @@
 export default function Peta() {
   return (
-    <div className="flex flex-col justify-center gap-6 sm:gap-8 md:gap-10 items-center font-cabin w-full px-4 xl:px-0">
+    <div className="flex flex-col justify-center gap-6 sm:gap-8 md:gap-10 items-center font-cabin w-full px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 2xl:max-w-[1440px] 2xl:mx-auto">
       <div className="flex flex-col gap-4 sm:gap-5 w-full justify-center items-center">
         <h1 className="text-blue-950 opacity-85 text-lg sm:text-xl md:text-2xl">
           Lokasi Kantor

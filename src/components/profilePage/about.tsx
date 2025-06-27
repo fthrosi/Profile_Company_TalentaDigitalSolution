@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <div className="mx-4 sm:mx-5 md:mx-8 lg:mx-10 xl:px-16 rounded-3xl bg-[url('/assets/icons/background.png')] bg-cover bg-no-repeat mt-12 sm:mt-16 md:mt-20 lg:mt-20 2xl:mt-0 shadow-xl">
+    <div className="relative mx-[clamp(0.5rem,5vw,2rem)] md:mx-[clamp(3rem,3vw,3.5rem)] xl:mx-[clamp(6rem,10vw,9rem)] 2xl:max-w-[1440px] 2xl:mx-auto rounded-3xl bg-[url('/assets/icons/background.png')] bg-cover bg-no-repeat mt-12 sm:mt-16 md:mt-20 lg:mt-20 2xl:mt-0 shadow-xl">
       <img
         src="/assets/icons/logoaja.png"
         alt=""
-        className="w-8 sm:w-10 md:w-12 lg:w-12 absolute top-3 right-7 md:right-12 md:top-4 lg:left-14 lg:top-4"
+        className="w-8 sm:w-10 md:w-12 lg:w-12 absolute top-3 right-4 md:top-4 lg:left-5 xl:left-8 2xl:left-5 lg:top-4 xl:top-8"
       />
       <div className="flex flex-col lg:flex-row py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 lg:items-center">
         <div className="text-white font-bold font-cabin w-full lg:w-1/3 mb-6">

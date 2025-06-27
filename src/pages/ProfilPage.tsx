@@ -38,7 +38,7 @@ export default function ProfilPage() {
         className="absolute left-0 translate-y-50"
       />
       <SlideInUp>
-        <div className="mt-5 2xl:px-52 lg:px-20 py-10">
+        <div className="mt-5 py-10">
             <Peta />
         </div>        
       </SlideInUp>

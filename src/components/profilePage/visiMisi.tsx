@@ -1,6 +1,6 @@
 export default function VisiMisi() {
   return (
-    <div className="w-full flex justify-center px-4 sm:px-6 md:px-8 lg:px-10">
+    <div className="w-full flex justify-center px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 2xl:max-w-[1440px] 2xl:mx-auto">
       <div className="flex flex-col w-full max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[75%] xl:max-w-[70%] items-center mt-12 sm:mt-16 md:mt-20 lg:mt-20 gap-4 sm:gap-5 md:gap-6">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-cabin text-blue-900 font-bold">
           Visi
