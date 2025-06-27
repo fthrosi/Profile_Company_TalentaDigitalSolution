@@ -9,9 +9,10 @@ export default function Header() {
 
       if (parallaxRef1.current) {
         const elementHeight = parallaxRef1.current.offsetHeight;
-        const imageHeight = 3000
+        const imageHeight = 3000;
         const maxOffset = Math.max(imageHeight - elementHeight, 0);
-        const elementTop = parallaxRef1.current.getBoundingClientRect().top + window.scrollY;
+        const elementTop =
+          parallaxRef1.current.getBoundingClientRect().top + window.scrollY;
 
         const relativeScroll = Math.max(scrollPosition - elementTop, 0);
         const offset = Math.min(relativeScroll * 1, maxOffset);
@@ -27,19 +28,24 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="relative h-[32rem] sm:h-[36rem] md:h-[42rem] lg:h-[38rem] xl:[36rem] xl:h-[32.5rem] overflow-hidden">
+    <div className="h-[32rem] sm:h-[36rem] md:h-[42rem] lg:h-[38rem] xl:[36rem] xl:h-[32.5rem] overflow-hidden">
       <header
         ref={parallaxRef1}
-        className="relative px-4 sm:px-6 md:px-12 lg:px-24 py-6 pt-20 sm:pt-24 md:pt-30 lg:pt-14 xl:pt-8 sm:py-8 md:py-10 lg:py-13 xl:py-20 h-full bg-[url('/assets/icons/background.png')] bg-top bg-no-repeat bg-cover"
+        className="relative px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] md:mt-10 lg:mt-0 2xl:max-w-[1440px] 2xl:mx-auto 2xl:px-0 py-6 pt-20 sm:pt-24 md:pt- lg:pt-14 xl:pt-8 sm:py-8 md:py-10 lg:py-13 xl:py-20 h-full bg-[url('/assets/icons/background.png')] bg-top bg-no-repeat bg-cover"
         style={{ backgroundAttachment: "scroll" }}
       >
-        <div className="w-full h-full xl:justify-center text-center lg:text-start xl:w-[55%] flex flex-col gap-3 mt-6">
-          <h1 className="text-xl sm:text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl font-bold font-cabin text-white leading-tight">
-            Selamat Datang di Profil <br />
-            Talenta Digital Solution
+        <div className="w-full h-full xl:justify-center text-center lg:text-start xl:w-[55%] flex flex-col gap-3 mt-6 md:mt-0">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold font-cabin text-white leading-tight">
+            Welcome to the Talenta Digital Profile
           </h1>
-          <p className="font-cabin text-white text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl opacity-80 leading-relaxed">
-          Kami menawarkan solusi perangkat lunak inovatif yang dirancang untuk menyederhanakan proses, meningkatkan efisiensi bisnis, dan mengoptimalkan kinerja perusahaan Anda. Dengan tim profesional berpengalaman di bidang teknologi, kami siap mendukung transformasi digital bisnis Anda melalui solusi yang efektif dan efisien. Mari bersama-sama menciptakan masa depan yang lebih cerdas dengan teknologi!
+          <p className="font-cabin text-white text-sm sm:text-base md:text-xl lg:text-xl 2xl:text-2xl opacity-80 leading-relaxed">
+            Kami menawarkan solusi perangkat lunak inovatif yang dirancang untuk
+            menyederhanakan proses, meningkatkan efisiensi bisnis, dan
+            mengoptimalkan kinerja perusahaan Anda. Dengan tim profesional
+            berpengalaman di bidang teknologi, kami siap mendukung transformasi
+            digital bisnis Anda melalui solusi yang efektif dan efisien. Mari
+            bersama-sama menciptakan masa depan yang lebih cerdas dengan
+            teknologi!
           </p>
         </div>
         <img

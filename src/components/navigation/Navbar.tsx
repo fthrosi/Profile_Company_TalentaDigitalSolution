@@ -45,11 +45,11 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed z-10 top-0 2xl:h-[82px] right-0 w-full bg-transparent shadow-md transition-transform duration-300 ease-in-out ${
-        visible ? "translate-y-0 bg-white" : "-translate-y-full"
+      className={`fixed z-10 top-0 lg:h-[80px] 2xl:h-[82px]  w-full bg-transparent transition-transform duration-300 ease-in-out py-2 ${
+        visible ? "translate-y-0 bg-white shadow-md" : "-translate-y-full"
       }`}
     >
-      <div className="flex justify-between items-center px-4 md:px-12 xl:px-24 2xl:px-48 py-4">
+      <div className="flex justify-between h-full items-center px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 2xl:max-w-[1440px] 2xl:mx-auto">
         <Link to="/">
           <img
             src="/assets/icons/logo-app.png"
@@ -104,12 +104,12 @@ export default function Navbar() {
       <div
           className={`md:hidden shadow-xl fixed z-50 inset-y-0 left-0 w-full bg-white text-black transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out min-h-screen`}
         >
-          <div className="fixed w-full p-4 flex justify-between items-center ">
+          <div className="fixed w-full px-[clamp(0.5rem,5vw,2rem)] py-4 flex justify-between items-center ">
             <div className="flex">
               <img src={"/assets/icons/logo-app.png"} className="w-28" alt="Flowbite Logo" />
             </div>
             <button className="text-white focus:outline-none" onClick={toggleMenu}>
-              <svg className="w-6 h-6" fill="none" stroke="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-6 h-6" fill="none" stroke="#193cb8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>

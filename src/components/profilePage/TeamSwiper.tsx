@@ -73,7 +73,7 @@ const TeamSwiper: React.FC = () => {
               className={`flex flex-col gap-2 p-2 sm:p-3 md:p-4 flex-1 max-w-full sm:max-w-[calc(50%-1rem)] md:max-w-[calc(33.33%-1rem)] lg:max-w-[calc(25%-1rem)] text-center box-border ${card.id < 0 ? "opacity-0" : ""}`}
             >
               <div className="flex items-center justify-center">
-                <div className="size-[6rem] sm:size-[8rem] md:size-[10rem] lg:size-[10rem] xl:size-[12rem] 2xl:size-[15rem] rounded-full overflow-hidden flex items-center">
+                <div className="size-[6rem] sm:size-[8rem] md:size-[10rem] lg:size-[10rem] xl:size-[12rem] 2xl:size-[13rem] rounded-full overflow-hidden flex items-center">
                   <img
                     src={card.foto || "/assets/icons/foto-saya.png"} // Gunakan foto dari JSON atau fallback
                     alt={card.title}
@@ -81,13 +81,13 @@ const TeamSwiper: React.FC = () => {
                   />
                 </div>
               </div>
-              <h3 className="font-semibold text-blue-950 text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+              <h3 className="font-semibold text-blue-950 text-sm sm:text-base md:text-lg lg:text-xl">
                 {card.title}
               </h3>
-              <h4 className="uppercase text-blue-950 opacity-50 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl">
+              <h4 className="uppercase text-blue-950 opacity-50 text-sm sm:text-base md:text-lg lg:text-xl">
                 {card.jabatan}
               </h4>
-              <p className="text-[#102B5B] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+              <p className="text-[#102B5B] text-xs sm:text-sm md:text-base lg:text-lg">
                 {card.content}
               </p>
               <div className="flex justify-center mt-2 sm:mt-3 md:mt-4 gap-1 sm:gap-2">

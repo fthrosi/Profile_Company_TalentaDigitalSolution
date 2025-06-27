@@ -43,32 +43,32 @@ export default function Header() {
       <div className="w-full max-w-7xl flex flex-col px-[10%] xl:px-0 xl:flex-row mt-20 md:mt-10 lg:mt-0 md:gap-5 lg:gap-3 xl:gap-10">
         <div className="flex flex-col w-full xl:w-3/5 2xl:w-1/2 font-cabin text-white">
           <h3 className="text-xl">Portofolio</h3>
-          <h1 className="text-5xl leading-tight xl:text-7xl 2xl:text-8xl font-black">
+          <h1 className="text-4xl leading-tight xl:text-5xl 2xl:text-6xl ">
             Talenta Portofolio
           </h1>
         </div>
         <div className="flex items-center">
-          <p className="text-white font-cabin text-justify text-lg xl:text-xl">
+          <p className="text-white font-cabin text-justify text-base xl:text-lg">
             Talenta siap mewujudkan ide digitalmu menjadi kenyataan! Dari website bisnis yang elegan hingga aplikasi mobile yang powerful, portofolio kami membuktikan keahlian dalam menciptakan solusi yang responsif, fungsional, dan user-friendly. Percayakan proyekmu kepada tim profesional kami dan buat brand-mu semakin bersinar di dunia digital
           </p>
         </div>
       </div>
-      <div className="w-full px-[10%] sm:px-[10%] md:px-16 lg:px-0 flex flex-wrap lg:flex-nowrap md:flex-row gap-4 mt-6 lg:mt-8 xl:mt-10 justify-center md:text-lg lg:text-xl">
-        <div className="bg-white rounded-md p-2 flex w-full sm:w-fit items-center gap-2 min-w-fit">
+      <div className="w-full px-[10%] md:px-16 lg:px-0 flex flex-wrap lg:flex-nowrap md:flex-row gap-4 mt-6 lg:mt-8 xl:mt-10 justify-center text-base">
+        <div className="bg-white rounded-md p-1 flex w-full sm:w-fit items-center gap-2 min-w-fit">
           <img src="/assets/icons/hasil.png" alt="" className="w-auto h-auto" />
-          <h2 className="text-blue-800 text-base 2xl:text-xl font-semibold whitespace-nowrap">
+          <h2 className="text-blue-800 font-semibold whitespace-nowrap">
             Hasil Maksimal
           </h2>
         </div>
-        <div className="bg-white rounded-md p-2 flex w-full sm:w-fit items-center gap-2 min-w-fit">
+        <div className="bg-white rounded-md p-1 flex w-full sm:w-fit items-center gap-2 min-w-fit">
           <img src="/assets/icons/kustmisasi.png" alt="" className="w-auto h-auto" />
-          <h2 className="text-blue-800 text-base 2xl:text-xl font-semibold whitespace-nowrap">
+          <h2 className="text-blue-800 font-semibold whitespace-nowrap">
             Kustomisasi Sesuai Kebutuhan
           </h2>
         </div>
-        <div className="bg-white rounded-md p-2 flex w-full sm:w-fit items-center gap-2 min-w-fit">
+        <div className="bg-white rounded-md p-1 flex w-full sm:w-fit items-center gap-2 min-w-fit">
           <img src="/assets/icons/teknologi.png" alt="" className="w-auto h-auto" />
-          <h2 className="text-blue-800 text-base 2xl:text-xl font-semibold whitespace-nowrap">
+          <h2 className="text-blue-800 font-semibold whitespace-nowrap">
             Teknologi Terkini
           </h2>
         </div>

@@ -1,37 +1,37 @@
 [
     {
       "judul": "Innovation",
-      "isi": "Terus inovasi untuk layanan yang lebih baik untuk klien.",
+      "isi": "Continuously innovate for better services for our clients.",
       "icon": "/assets/icons/lamp.png"
     },
     {
       "judul": "Excellence",
-      "isi": "Solusi berkualitas tinggi yang melampaui harapan klien.",
+      "isi": "High-quality solutions that exceed client expectations.",
       "icon": "/assets/icons/lencana.png"
     },
     {
       "judul": "Agility",
-      "isi": "Respon cepat dan efektif terhadap perubahan kebutuhan.",
+      "isi": "Quick and effective response to changing needs.",
       "icon": "/assets/icons/layer.png"
     },
     {
       "judul": "Warranty",
-      "isi": "Website cepat, ringan, dan optimal berdasarkan GTmetrix/PageSpeed.",
+      "isi": "Fast, lightweight, and optimized websites based on GTmetrix/PageSpeed.",
       "icon": "/assets/icons/Warranty.png"
     },
     {
       "judul": "Partnership",
-      "isi": "Membangun kemitraan kuat dengan kepercayaan dan rasa hormat.",
+      "isi": "Building strong partnerships based on trust and respect.",
       "icon": "/assets/icons/salaman.png"
     },
     {
       "judul": "Security Protection",
-      "isi": "Keamanan ketat, bebas malware, dan perlindungan optimal.",
+      "isi": "Strict security, malware-free, and optimal protection.",
       "icon": "/assets/icons/globe.png"
     },
     {
       "judul": "Free Hosting",
-      "isi": "Termasuk domain dan hosting jika diperlukan.",
+      "isi": "Including domain and hosting if needed.",
       "icon": "/assets/icons/Cloud.png"
     }
 ]

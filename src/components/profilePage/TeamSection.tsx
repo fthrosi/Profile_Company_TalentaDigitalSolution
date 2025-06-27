@@ -7,10 +7,10 @@ export default function TeamSection() {
         <h1 className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#808080] font-semibold">
           Company Members
         </h1>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] xl:text-5xl 2xl:text-6xl text-blue-950 font-bold leading-tight">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-blue-950 font-bold leading-tight">
           We are proud of our team members
         </h1>
-        <h1 className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl text-[#808080] font-semibold">
+        <h1 className="text-sm sm:text-base md:text-lg xl:text-xl text-[#808080] font-semibold">
         Talenta Digital didukung oleh tim profesional yang berpengalaman serta memiliki dedikasi tinggi.
         </h1>
       </div>

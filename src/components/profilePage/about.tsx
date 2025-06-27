@@ -11,14 +11,14 @@ export default function About() {
           <h1 className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-xl">
             About Talenta
           </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
             Talenta Digital
             <br />
             Solution
           </h1>
         </div>
         <div className="w-full lg:w-2/3">
-          <p className="text-justify text-white font-cabin text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl leading-relaxed">
+          <p className="text-justify text-white font-cabin text-sm sm:text-base md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl leading-relaxed">
             PT Talenta Digital Solution didirikan pada tahun 2024 dengan visi
             untuk menjadi mitra terpercaya dalam pengembangan perangkat lunak
             yang inovatif dan berkualitas. Berawal dari tim kecil yang terdiri

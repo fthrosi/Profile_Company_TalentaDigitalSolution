@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Card from "./card";
+import { cardHeaderProduct } from "../../data/data";
 
 export default function Header() {
   const parallaxRef1 = useRef<HTMLDivElement>(null);
@@ -31,35 +32,31 @@ export default function Header() {
   return (
     <div className="lg:min-h-screen">
       <div
-        className="md:w-full pt-18 pb-8 bg-[url(/assets/icons/background.png)] bg-cover bg-top bg-no-repeat min-h-[20rem] md:pt-20 lg:pt-10 h-[60rem] sm:h-[28rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 2xl:px-48"
+        className="bg-[url(/assets/icons/background.png)] bg-cover bg-top bg-no-repeat pt-18 md:pt-24 2xl:pt-16 min-h-[35rem] sm:min-h-0 sm:h-[25rem] lg:h-[28rem] xl:h-[35rem] px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 "
         ref={parallaxRef1}
       >
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-9 xl:gap-16 2xl:gap-35 lg:py-4 items-center text-white">
-          <div className="text-pretty w-full lg:w-1/2 2xl:w-[50rem]">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold font-cabin leading-tight">
+        <div className="flex flex-col sm:flex-row items-stretch text-white gap-2 2xl:max-w-[1440px] 2xl:mx-auto">
+          <div className="text-pretty w-full lg:pr-17">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[clamp(2.25rem,3vw,3rem)] 2xl:text-5xl font-bold font-cabin leading-tight">
               Empowering Businesses Through Technology to Achieve Their Full
               Potential.
             </h1>
           </div>
-          <div className="text-pretty w-full lg:w-1/2">
-            <h1 className="text-sm text-justify sm:text-base md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl font-semibold font-cabin opacity-80 leading-relaxed">
-              Talenta menghadirkan solusi perangkat lunak inovatif untuk
-              menyederhanakan proses, meningkatkan efisiensi, dan mengoptimalkan
-              kinerja.
+          <div className="text-pretty w-full lg:self-center">
+            <h1 className="text-sm sm:text-base md:text-xl lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-2xl font-semibold font-cabin opacity-80 leading-relaxed ">
+              Talenta presents innovative software solutions to simplify processes, improve efficiency, and optimize performance.
             </h1>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between gap-x-6 lg:gap-x-20 2xl:gap-40 mt-6 sm:mt-8">
-          <Card
-            judul="Meningkatkan efisiensi bisnis perusahaan"
-            isi="Talenta Digital membantu perusahaan Anda mencapai efisiensi operasional yang optimal melalui integrasi teknologi terdepan."
-            img="/assets/icons/img-1.png"
-          />
-          <Card
-            judul="Meningkatkan efisiensi bisnis perusahaan"
-            isi="Talenta Digital menawarkan solusi lengkap dirancang untuk menyederhanakan proses bisnis dan mengoptimalkan kinerja perusahaan."
-            img="/assets/icons/img-1.png"
-          />
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-x-2 lg:gap-x-10 xl:gap-x-10  mt-6 sm:mt-8 2xl:mt-[clamp(4rem,4.5vw,6.25rem)]">
+          {cardHeaderProduct.map((item, index) => (
+            <Card
+              key={index}
+              judul={item.judul}
+              isi={item.isi}
+              img={item.img}
+            />
+          ))}
         </div>
       </div>
     </div>
