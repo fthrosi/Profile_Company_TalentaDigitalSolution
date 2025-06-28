@@ -1,32 +1,8 @@
-import { useEffect, useRef } from "react";
-
+import { useRef } from "react";
+import { useParallax } from "../../animation/paralax";
 export default function Header() {
   const parallaxRef1 = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      if (parallaxRef1.current) {
-        const elementHeight = parallaxRef1.current.offsetHeight;
-        const imageHeight = 3000;
-        const maxOffset = Math.max(imageHeight - elementHeight, 0);
-        const elementTop =
-          parallaxRef1.current.getBoundingClientRect().top + window.scrollY;
-
-        const relativeScroll = Math.max(scrollPosition - elementTop, 0);
-        const offset = Math.min(relativeScroll * 1, maxOffset);
-
-        parallaxRef1.current.style.backgroundPositionY = `${offset}px`;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  useParallax(parallaxRef1, 1000, 1);
   return (
       <header
         ref={parallaxRef1}

@@ -1,6 +1,13 @@
+import { motion } from "motion/react";
 export default function About() {
   return (
-    <div className="relative mx-[clamp(0.5rem,5vw,2rem)] md:mx-[clamp(3rem,3vw,3.5rem)] xl:mx-[clamp(6rem,10vw,9rem)] 2xl:max-w-[1440px] 2xl:mx-auto rounded-3xl bg-[url('/assets/icons/background.png')] bg-cover bg-no-repeat mt-12 sm:mt-16 md:mt-20 lg:mt-20 2xl:mt-0 shadow-xl">
+    <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="relative mx-[clamp(0.5rem,5vw,2rem)] md:mx-[clamp(3rem,3vw,3.5rem)] xl:mx-[clamp(6rem,10vw,9rem)] 2xl:max-w-[1440px] 2xl:mx-auto rounded-3xl bg-[url('/assets/icons/background.png')] bg-cover bg-no-repeat mt-12 sm:mt-16 md:mt-20 lg:mt-20 2xl:mt-0 shadow-xl"
+    >
       <img
         src="/assets/icons/logoaja.png"
         alt=""
@@ -22,12 +29,12 @@ export default function About() {
             PT Talenta Digital Solution didirikan pada tahun 2024 dengan visi
             untuk menjadi mitra terpercaya dalam pengembangan perangkat lunak
             yang inovatif dan berkualitas. Berawal dari tim kecil yang terdiri
-            dari para profesional di bidang teknologi, perusahaan ini lahir
-            dari semangat untuk membantu bisnis bertransformasi secara digital
+            dari para profesional di bidang teknologi, perusahaan ini lahir dari
+            semangat untuk membantu bisnis bertransformasi secara digital
             melalui solusi perangkat lunak yang efektif dan efisien.
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

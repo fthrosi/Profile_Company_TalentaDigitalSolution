@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import cards from "../../data/member.json";
+import { teamData } from "../../data/data";
 
 const TeamSwiper: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -21,7 +21,7 @@ const TeamSwiper: React.FC = () => {
     return itemsPerPage.lg;
   };
 
-  const totalPages = Math.ceil(cards.length / getItemsPerPage());
+  const totalPages = Math.ceil(teamData.length / getItemsPerPage());
 
   const changePage = (newPage: number) => {
     if (newPage === currentPage || isTransitioning) return;
@@ -37,8 +37,8 @@ const TeamSwiper: React.FC = () => {
   const getCurrentPageItems = () => {
     const currentItemsPerPage = getItemsPerPage();
     const startIndex = currentPage * currentItemsPerPage;
-    const endIndex = Math.min(startIndex + currentItemsPerPage, cards.length);
-    const pageItems = cards.slice(startIndex, endIndex);
+    const endIndex = Math.min(startIndex + currentItemsPerPage, teamData.length);
+    const pageItems = teamData.slice(startIndex, endIndex);
     const paddingCount = currentItemsPerPage - pageItems.length;
     if (paddingCount > 0 && currentPage === totalPages - 1) {
       for (let i = 0; i < paddingCount; i++) {

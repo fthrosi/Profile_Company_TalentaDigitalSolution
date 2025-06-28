@@ -1,38 +1,16 @@
 import { useEffect, useRef } from "react";
 import Card from "./card";
 import { cardHeaderProduct } from "../../data/data";
-
+import { useParallax } from "../../animation/paralax";
 export default function Header() {
   const parallaxRef1 = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      if (parallaxRef1.current) {
-        const elementHeight = parallaxRef1.current.offsetHeight;
-        const imageHeight = 3000; // Sesuaikan dengan tinggi gambar asli
-        const maxOffset = Math.max(imageHeight - elementHeight, 0);
-        const elementTop =
-          parallaxRef1.current.getBoundingClientRect().top + window.scrollY;
-
-        const relativeScroll = Math.max(scrollPosition - elementTop, 0);
-        const offset = Math.min(relativeScroll * 1, maxOffset);
-
-        parallaxRef1.current.style.backgroundPositionY = `${offset}px`;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  useParallax(parallaxRef1, 1000, 1);
 
   return (
     <div className="lg:min-h-screen">
       <div
-        className="bg-[url(/assets/icons/background.png)] bg-cover bg-top bg-no-repeat pt-18 md:pt-24 2xl:pt-16 min-h-[35rem] sm:min-h-0 sm:h-[25rem] lg:h-[28rem] xl:h-[35rem] px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 "
+        className="bg-[url(/assets/icons/background-1.png)] bg-cover bg-top bg-no-repeat pt-18 md:pt-24 2xl:pt-16 min-h-[35rem] sm:min-h-0 sm:h-[25rem] lg:h-[28rem] xl:h-[35rem] px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 "
         ref={parallaxRef1}
       >
         <div className="flex flex-col sm:flex-row items-stretch text-white gap-2 2xl:max-w-[1440px] 2xl:mx-auto">
