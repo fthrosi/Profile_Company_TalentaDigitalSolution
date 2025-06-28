@@ -1,6 +1,6 @@
 const Teknologi = () => {
   return (
-    <div className="my-20 px-10 md:px-20 xl:px-40 2xl:px-60 flex flex-wrap lg:flex-nowrap gap-8 lg:gap-30 justify-center">
+    <div className="px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 2xl:max-w-[1440px] 2xl:mx-auto my-20 flex flex-wrap lg:flex-nowrap gap-8 lg:gap-30 justify-center">
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-end order-2 lg:order-1 ">
         <div className="flex md:gap-20 gap-10 justify-between">
           <div className="flex flex-col gap-y-5 items-center">

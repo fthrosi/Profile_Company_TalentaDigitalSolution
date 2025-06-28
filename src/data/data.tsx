@@ -43,3 +43,29 @@ export const jasaData = [
     isi: "Advanced financial management tools for accurate reporting and compliance.",
   },
 ]
+export const teknologiData = [
+  {
+    img: "/assets/icons/NodeJs.png",
+    judul: "Node Js"
+  },
+  {
+    img: "/assets/icons/React.png",
+    judul: "React",
+  },
+  {
+    img: "/assets/icons/flutter.png",
+    judul: "Flutter",
+  },
+  {
+    img: "/assets/icons/Kotlin.png",
+    judul: "Kotlin",
+  },
+  {
+    img: "/assets/icons/wordpress.png",
+    judul: "Wordpress",
+  },
+  {
+    img: "/assets/icons/tensorflow.png",
+    judul: "Tensorflow",
+  }
+];

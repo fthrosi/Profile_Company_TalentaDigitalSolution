@@ -45,7 +45,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed z-10 top-0 lg:h-[80px] 2xl:h-[82px]  w-full bg-transparent transition-transform duration-300 ease-in-out py-2 ${
+      className={`fixed z-20 top-0 lg:h-[80px] 2xl:h-[82px]  w-full bg-transparent transition-transform duration-300 ease-in-out py-2 ${
         visible ? "translate-y-0 bg-white shadow-md" : "-translate-y-full"
       }`}
     >

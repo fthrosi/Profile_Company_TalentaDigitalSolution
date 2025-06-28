@@ -1,6 +1,6 @@
 export default function PortofoiloSection() {
   return (
-    <div className="px-4 py-8 md:px-12 lg:px-20 xl:px-26 flex flex-col items-center">
+    <div className="px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 2xl:max-w-[1440px] 2xl:mx-auto py-8 flex flex-col items-center">
       <div className="flex flex-col items-center font-cabin px-4 md:px-8 lg:px-10 2xl:px-50 gap-4 w-full max-w-4xl">
         <h1 className="text-[#102B5BCC] font-semibold text-lg md:text-xl 2xl:text-2xl">
           Mobile App

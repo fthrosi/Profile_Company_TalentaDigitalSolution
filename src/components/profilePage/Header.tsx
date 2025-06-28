@@ -28,7 +28,6 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="bg-red-600">
       <header
         ref={parallaxRef1}
         className="relative px-[clamp(0.5rem,5vw,2rem)] md:px-[clamp(3rem,3vw,3.5rem)] xl:px-[clamp(6rem,10vw,9rem)] 2xl:px-0 py-15 md:py-20 lg:py-13 xl:py-20 h-full bg-[url('/assets/icons/background.png')] bg-top bg-no-repeat bg-cover min-h-[30rem] sm:h-[36rem] md:h-[42rem] lg:min-h-0 lg:h-[25rem] xl:[36rem] xl:h-[32.5rem]"
@@ -66,6 +65,5 @@ export default function Header() {
           className="absolute right-0 bottom-0 sm:bottom-0 w-full h-5 sm:w-full sm:h-10 md:w-full md:h-15 lg:max-w-full"
         />
       </header>
-    </div>
   );
 }
