@@ -80,10 +80,10 @@ export default function Navbar() {
 
         <div className="hidden md:flex md:items-center md:space-x-8 lg:space-x-12 xl:space-x-20 text-blue-800 font-normal text-base lg:text-xl font-cabin">
           <Link to="/" className="hover:text-blue-500">
-            Produk
+            Product
           </Link>
           <Link to="/profile" className="hover:text-blue-500">
-            Profil
+            Profile
           </Link>
           <Link to="/portofolio" className="hover:text-blue-500">
             Portofolio
