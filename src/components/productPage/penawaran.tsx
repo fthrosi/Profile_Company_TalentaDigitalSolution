@@ -23,7 +23,7 @@ const Penawaran = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
-          className="w-full sm:w-1/2 max-w-[95%] drop-shadow-lg rounded-t-4xl rounded-br-4xl overflow-hidden bg-amber-300"
+          className="w-full sm:w-1/2 max-w-[95%] drop-shadow-lg rounded-t-4xl rounded-br-4xl overflow-hidde"
         >
           <img
             src="/assets/icons/img-2.png"
@@ -56,7 +56,7 @@ const Penawaran = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
-          className="w-full sm:w-1/2 max-w-[95%] drop-shadow-lg rounded-t-4xl rounded-bl-4xl overflow-hidden bg-amber-300"
+          className="w-full sm:w-1/2 max-w-[95%] drop-shadow-lg rounded-t-4xl rounded-bl-4xl overflow-hidde"
         >
           <img
             src="/assets/icons/img-1.png"
