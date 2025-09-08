@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Card from "./card";
 import { cardHeaderProduct } from "../../data/data";
 import { useParallax } from "../../animation/paralax";
