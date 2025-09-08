@@ -6,7 +6,7 @@ export default function Pertumbuhan() {
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="w-full lg:w-1/2 flex flex-col justify-center gap-4 sm:gap-6 md:gap-8"
       >
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-cabin text-[#102B5B] font-bold">
@@ -25,7 +25,7 @@ export default function Pertumbuhan() {
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="w-full lg:w-1/2 flex items-center justify-center mt-6 lg:mt-0"
       >
         <img

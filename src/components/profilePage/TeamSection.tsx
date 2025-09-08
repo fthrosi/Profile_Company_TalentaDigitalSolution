@@ -7,7 +7,7 @@ export default function TeamSection() {
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="w-full sm:w-3/4 md:w-2/3 lg:w-2/5 flex flex-col space-y-2 sm:space-y-3 md:space-y-4 font-cabin"
       >
         <h1 className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#808080] font-semibold">
