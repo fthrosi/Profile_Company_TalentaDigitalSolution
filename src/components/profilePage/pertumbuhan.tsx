@@ -9,7 +9,7 @@ export default function Pertumbuhan() {
         viewport={{ once: true, amount: 0.5 }}
         className="w-full lg:w-1/2 flex flex-col justify-center gap-4 sm:gap-6 md:gap-8"
       >
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-cabin text-[#102B5B] font-bold">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-cabin text-[#102B5B] font-bold z-10">
           Perjalanan & Pertumbuhan
         </h1>
         <p className="text-justify text-sm sm:text-base md:text-lg lg:text-xl leading-6 sm:leading-7 md:leading-8 opacity-65">
